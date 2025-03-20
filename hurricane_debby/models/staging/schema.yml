@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: staging_weather_daily
+    description: "Daily weather data"
+    columns:
+      - name: date
+        description: "The weather data observation date"
+        tests:
+          - unique
+          - not_null
+      - name: avg_temp_c
+        description: "The average temperation in degrees celsius"
+        tests:
+          - unique
+          - not_null

@@ -34,3 +34,10 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+      enabled: false
+    staging:
+        +materialized: table
+    prep:
+        +materialized: table
+    mart:
+        +materialized: table
