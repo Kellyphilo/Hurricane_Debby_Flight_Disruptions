@@ -13,5 +13,5 @@ add_features AS (
     FROM daily_data 
 )
 SELECT *
-FROM add_more_features
+FROM add_features
 ORDER BY date
