@@ -4,5 +4,5 @@ sources:
 - name: flights_data
   schema: s_kailiwu
   tables:
-    - name: flights_all
+    - name: flights_debby
     - name: airports

@@ -1,6 +1,6 @@
 WITH flights_all AS (
     SELECT * 
-    FROM {{source('flights_data', 'flights_all')}}
+    FROM {{source('flights_data', 'flights_debby')}}
 ),
 flights_cleaned AS(
     SELECT flight_date::DATE
