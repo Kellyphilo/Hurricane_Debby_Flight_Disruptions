@@ -4,6 +4,6 @@ SELECT f.flight_date
 	  ,round(AVG(f.dep_delay), 2) AS avg_dep_delay
 	  ,round(AVG(f.arr_delay), 2) AS avg_arr_delay
 FROM {{ref('debby_prep_flights')}} f
-WHERE f.dest = 'MCO' OR f.origin = 'MCO'
+WHERE f.dest = 'JFK' OR f.origin = 'JFK'
 GROUP BY f.flight_date
-ORDER BY flight_date 
+ORDER BY flight_date
